@@ -5,8 +5,9 @@
     [Source](https://github.com/garnix-io/rss-bridge-module).
   '';
 
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
   inputs.garnix-lib.url = "github:joegoldin/garnix-lib";
+  inputs.garnix-lib.inputs.nixpkgs.follows = "nixpkgs";
 
   outputs = { self, nixpkgs, ... }:
     let
