@@ -6,7 +6,7 @@
   '';
 
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
-  inputs.garnix-lib.url = "github:garnix-io/garnix-lib";
+  inputs.garnix-lib.url = "github:joegoldin/garnix-lib";
 
   outputs = { self, nixpkgs, ... }:
     let
